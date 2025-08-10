@@ -15,9 +15,9 @@ Bem-vindo(a) à **Calculadora de Saúde**! Um projeto prático para calcular e a
 
 Este projeto foi feito com tecnologias web simples e acessíveis:
 
-- **HTML5** 📄 (estrutura)
-- **CSS3** 🎨 (design e responsividade)
-- **JavaScript ES6+** ⚡ (cálculos e interações)
+- **HTML5** 📄
+- **CSS3** 🎨
+- **JavaScript ES6+** ⚡
 
 ## 🙋‍♀️ Autora
 
