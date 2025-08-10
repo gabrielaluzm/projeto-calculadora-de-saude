@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadoras de Saúde - IMC e Déficit Calórico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="calculadora-imc">
+        <h2 class="titulo">Calculadora de IMC</h2>
+        <p class="descricao">
+          Calcule seu Índice de Massa Corporal (IMC) e descubra se você está
+          dentro do peso ideal.
+        </p>
+        <form class="formulario" id="form-imc">
+          <div class="input-group">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" step="0.1" min="1" required />
+          </div>
+          <div class="input-group">
+            <label for="altura">Altura (m):</label>
+            <input
+              type="number"
+              id="altura"
+              step="0.01"
+              min="0.5"
+              max="2.5"
+              required
+            />
+          </div>
+          <button type="submit" class="btn-calcular">Calcular IMC</button>
+        </form>
+        <div class="resultado" id="resultado-imc"></div>
+      </section>
+
+      <section class="calculadora-calorias">
+        <h2 class="titulo">Calculadora de Déficit Calórico</h2>
+        <p class="descricao">
+          Calcule quantas calorias você precisa consumir para atingir seu
+          objetivo de peso.
+        </p>
+        <form class="formulario" id="form-calorias">
+          <div class="input-group">
+            <label for="peso-cal">Peso Atual (kg):</label>
+            <input type="number" id="peso-cal" step="0.1" min="1" required />
+          </div>
+          <div class="input-group">
+            <label for="altura-cal">Altura (cm):</label>
+            <input type="number" id="altura-cal" min="50" max="250" required />
+          </div>
+          <div class="input-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="15" max="100" required />
+          </div>
+          <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" required>
+              <option value="">Selecione</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="atividade">Nível de Atividade:</label>
+            <select id="atividade" required>
+              <option value="">Selecione</option>
+              <option value="1.2">
+                Sedentário (pouco ou nenhum exercício)
+              </option>
+              <option value="1.375">
+                Levemente ativo (exercício leve 1-3 dias/semana)
+              </option>
+              <option value="1.55">
+                Moderadamente ativo (exercício moderado 3-5 dias/semana)
+              </option>
+              <option value="1.725">
+                Muito ativo (exercício intenso 6-7 dias/semana)
+              </option>
+              <option value="1.9">
+                Extremamente ativo (exercício muito intenso, trabalho físico)
+              </option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="objetivo">Objetivo:</label>
+            <select id="objetivo" required>
+              <option value="">Selecione</option>
+              <option value="perder">Perder peso</option>
+              <option value="manter">Manter peso</option>
+              <option value="ganhar">Ganhar peso</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-calcular">Calcular Calorias</button>
+        </form>
+        <div class="resultado" id="resultado-calorias"></div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

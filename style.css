@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculadora-imc,
+.calculadora-calorias {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titulo {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.descricao {
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-calcular {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-calcular:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.btn-calcular:active {
+  transform: translateY(0);
+}
+
+.resultado {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resultado.sucesso {
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.resultado.alerta {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+.resultado.perigo {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  box-shadow: 0 5px 15px rgba(244, 67, 54, 0.3);
+}
+
+.resultado.info {
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  color: white;
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+}
+
+.imc-valor {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.imc-classificacao {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.calorias-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.calorias-valor {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.calorias-detalhes {
+  font-size: 14px;
+  opacity: 0.9;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* versao responsiva */
+
+@media (max-width: 767px) {
+  .container {
+    gap: 20px;
+  }
+
+  .calculadora-imc,
+  .calculadora-calorias {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 24px;
+  }
+}
+
+.calculadora-imc,
+.calculadora-calorias {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
