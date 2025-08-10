@@ -4,6 +4,9 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+<img width="1120" height="637" alt="image" src="https://github.com/user-attachments/assets/16477447-c138-450b-a029-eadabee6bac3" />
+
+
 ## 📋 Descrição
 
 Uma aplicação web moderna e responsiva que oferece **duas calculadoras essenciais** para o acompanhamento da saúde e fitness:
