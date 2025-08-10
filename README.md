@@ -19,11 +19,6 @@ Este projeto foi feito com tecnologias web simples e acessíveis:
 - **CSS3** 🎨 (design e responsividade)
 - **JavaScript ES6+** ⚡ (cálculos e interações)
 
-## 📱 Responsividade
-
-- **Desktop:** Layout amplo e intuitivo
-- **Mobile:** Interface adaptada para telas pequenas
-
 ## 🙋‍♀️ Autora
 
 **Gabriela Luz** - [@gabrielaluzm](https://github.com/gabrielaluzm)
